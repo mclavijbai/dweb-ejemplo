@@ -42,4 +42,14 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/home1")
+    public String mostrarHome1() {
+        return "home1"; // Esto le dice a Spring que renderice templates/home1.html
+    }
+
+    @GetMapping("/home2")
+    public String mostrarHome2() {
+        return "home2";
+    }
+
 }
